@@ -1,0 +1,11 @@
+pip install qrcode # if you have not installed the library
+
+import qrcode
+
+img = qrcode.make('text')
+
+print(type(img))
+print(img.size)
+
+
+img.save('site.png')
